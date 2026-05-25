@@ -8,26 +8,26 @@ Smart home IoT system using Arduino hardware, Python integration, sensor automat
 
 - Smart lighting system
 - Temperature monitoring
-- Motion detection
+- Motion detection simulation
 - Garage door automation
 - Ventilation control
 - Emergency mode
 - Sensor automation
 - ThingSpeak cloud integration
+- Email command control system
 - Real Arduino hardware communication
 
 ---
 
 ## Hardware Components
 
-- Arduino
+- Arduino board
 - LM35 temperature sensor
-- PIR motion sensor
-- LDR light sensor
 - Ultrasonic sensor
 - Servo motor
 - LEDs
-- Relay modules
+- Breadboard
+- Jumper wires
 
 ---
 
@@ -45,17 +45,63 @@ Smart home IoT system using Arduino hardware, Python integration, sensor automat
 
 ```bash
 arduinoKitCode.ino
-smart_home.py
+smart_home_email_control.py
 screenshots/
+README.md
 ```
 
 ---
 
 ## Functionality
 
-The system automatically controls lighting, ventilation, garage access, and motion detection using sensor data and Arduino automation logic.
+The system automatically controls lighting, ventilation, garage access, and emergency states using sensor data and automation logic.
 
-Sensor data can also be monitored through ThingSpeak cloud integration.
+Sensor data is uploaded to ThingSpeak cloud services for monitoring and analytics.
+
+The Python integration enables:
+- email command processing
+- automation control
+- daily reports
+- cloud communication
+- alarm notifications
+
+---
+
+## Motion Detection Simulation
+
+The Arduino kit used for this project did not include a dedicated PIR motion sensor.
+
+To simulate motion detection functionality, a custom software-based solution was implemented using the keyword:
+
+```text
+MOTION
+```
+
+When motion is triggered through the simulation logic, the system activates a dedicated LED indicator representing detected movement inside the smart home environment.
+
+This approach allowed the project to demonstrate motion detection workflows, alarm logic, and automation behavior even without a physical PIR module.
+
+---
+
+## Hardware Setup
+
+The project was implemented using real Arduino hardware components connected through a breadboard setup.
+
+### Components Used
+- Arduino board
+- Ultrasonic sensor
+- Servo motor
+- LEDs
+- Temperature sensor
+- Breadboard and jumper wires
+
+---
+
+## Screenshots
+
+### Hardware Prototype
+
+![Hardware Setup](screenshots/hardware_setup.jpeg)
 
 ---
 
@@ -70,6 +116,8 @@ Through this project, I improved my understanding of:
 - Arduino development
 - Automation systems
 - Real-time monitoring
+- Cloud-based IoT platforms
+- Python-Arduino communication
 
 ---
 

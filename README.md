@@ -101,7 +101,7 @@ The project was implemented using real Arduino hardware components connected thr
 
 ### Hardware Prototype
 
-![Hardware Setup](screenshots/hardware_setup.jpeg)
+![Hardware Setup](screenshots/arduino.jpeg)
 
 ---
 
